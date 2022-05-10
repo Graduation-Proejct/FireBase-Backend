@@ -2,10 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "not now",
-  "main": "app.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon app.js",
+    "startdev": "nodemon server.js",
+    "start":"node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
