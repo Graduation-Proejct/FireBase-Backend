@@ -81,7 +81,7 @@ function writeUserData(userId, name, email, ids) {
 
 //todo: sending api
 
-server.use(function (req, res, next) {
+server.use(function(req, res, next) {
   console.log("Time:", Date.now());
   console.log(JSON.stringify(users));
   body_parser.json();
@@ -89,10 +89,10 @@ server.use(function (req, res, next) {
 });
 server.use(body_parser.urlencoded({ extended: true }));
 
-server.post("/signup", function (req, res) {
+server.post("/signup", function(req, res) {
   console.log(req.body);
 });
-server.listen(3000, function () {
+server.listen(3000, function() {
   console.log("Server running");
 });
 
